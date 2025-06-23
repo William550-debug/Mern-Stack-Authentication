@@ -1,92 +1,75 @@
-Authentication System - Full Stack (Node.js + React)
-Overview
-A secure authentication system featuring:
+# MERN Fullstack Application
 
-User registration & login
+A modern web application built using the **MERN stack** (MongoDB, Express.js, React, Node.js), featuring both a frontend (Client) and backend (Server).
 
-Password reset via OTP
+---
 
-Session management
+## 🚀 Features
 
-Protected routes
+- 🔐 User Authentication (JWT / OTP / etc.)
+- 🌐 Responsive React frontend with modern UI
+- ⚙️ RESTful API built with Express & Node.js
+- 🛢️ MongoDB database with Mongoose ODM
+- 📦 Modular folder structure for scalability
 
-Tech Stack
-Frontend (React)
-React 18+
+---
 
-React Router v6
+## 📁 Project Structure
+├── Client/ # React frontend
+├── server/ # Express backend
+├── .gitignore
+├── README.md
 
-Axios for HTTP requests
 
-React Toastify for notifications
 
-Context API for state management
+---
 
-Backend (Node.js)
-Express.js server
+## 🛠️ Tech Stack
 
-MongoDB with Mongoose
+**Frontend**:  
+- React  
+- Axios  
+- React Router  
+- Tailwind CSS / Bootstrap / Styled Components (your choice)  
 
-JWT for authentication
+**Backend**:  
+- Node.js  
+- Express.js  
+- MongoDB + Mongoose  
+- JSON Web Token (JWT)  
+- Bcrypt / OTP handling (if used)  
 
-Bcrypt for password hashing
+---
 
-Nodemailer for OTP emails
+## 🔧 Installation
 
-CORS middleware
+### 1. Clone the repository
 
-Cookie-parser for session management
+```bash
 
-Features
-User Authentication
-Email/password registration
 
-Secure login with JWT
+cd server
+npm install
 
-Protected routes
 
-Session persistence
+cd ../Client
+npm install
 
-Password Management
-Secure password hashing
 
-OTP-based password reset
+cd server
+npm run dev
 
-Email verification
+cd server
+npm run dev
 
-Password strength enforcement
 
-Security
-CSRF protection
+| Method | Route         | Description       |
+| ------ | ------------- | ----------------- |
+| POST   | /api/register | Register new user |
+| POST   | /api/login    | Authenticate user |
+| GET    | /api/profile  | Get user profile  |
+| ...    | ...           | Extend as needed  |
 
-Rate limiting
 
-Secure HTTP headers
 
-Input sanitization
 
-Project Structure
-text
-auth-system/
-├── client/               # React frontend
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/       # Static files
-│   │   ├── components/   # Reusable components
-│   │   ├── context/      # Global state
-│   │   ├── pages/        # Route components
-│   │   ├── services/     # API services
-│   │   └── App.js        # Main component
-│   └── package.json
-│
-├── server/               # Node.js backend
-│   ├── config/           # DB config
-│   ├── controllers/      # Route handlers
-│   ├── middleware/       # Auth middleware
-│   ├── models/           # MongoDB models
-│   ├── routes/           # API routes
-│   ├── utils/            # Helpers (email, tokens)
-│   ├── app.js            # Express app
-│   └── package.json
-│
-└── README.md
